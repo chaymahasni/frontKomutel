@@ -1,0 +1,32 @@
+<div class="surface-50 flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+    <div class="grid justify-content-center p-2 lg:p-0" style="min-width:60%">
+      <div class="col-20 mt-10 xl:mt-0 text-center"></div>
+  
+      <div class="col-15 xl:col-6" style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%);">
+        <div class="surface-50 h-full w-full m-0 py-7 px-4" style="border-radius:53px; background: linear-gradient(180deg, var(--surface-50) 38.9%, var(--surface-0));">
+          <div class="text-center mb-5">
+            <img src="assets/layout/images/logo.png" alt="Image" height="70" class="mb-3">
+            <div class="card custom-card">
+              <h5>Forgot password?</h5>
+              <div class="formgroup-inline">
+                <div class="field">
+                  <label for="firstname5" class="p-sr-only">Your Email</label>
+                  <input id="firstname5" type="text" pInputText placeholder="Your Email" pTooltip="Enter your Email" [(ngModel)]="email">
+                </div>
+                <div class="grid">
+                  <div class="col-12 lg:col-120">
+                    <p-toast key="tst" [baseZIndex]="99999"></p-toast>
+                    <button type="button" pButton (click)="showInfoViaToast()" label="Send Email" class="p-button-info mr-2"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <a href="#/pages/login" class="font-medium no-underline ml-8 text-left cursor-pointer" style="color: var(--primary-color)">Back To Sign In!</a>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+  
